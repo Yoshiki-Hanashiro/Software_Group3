@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="ja" />
     <meta name="viewport" id="iphone-viewport" content="width=480, user-scalable=yes, maximum-scale=0.6667" />
-    <link rel = "stylesheet" type = "text/css" href = "global.css">
+    <link rel = "stylesheet" type = "text/css" href = "../css/global.css">
     <script Langage="JavaScript">
       function client_resizeTo(520, 480) {
       　　if (document.layers) {

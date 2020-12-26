@@ -1,5 +1,5 @@
 <?php
-   include("header.php");  //echo the default Header entries
+   include("template/header.php");  //echo the default Header entries
 ?>
 
 <table width=98%>
@@ -30,5 +30,5 @@
   </table>
   
   <?php
-     include("footer.php");
+     include("template/footer.php");
   ?>
