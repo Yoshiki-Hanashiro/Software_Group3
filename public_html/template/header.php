@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>課題攻略</title>
+    <title>課題攻略サイト</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="ja" />
     <meta name="viewport" id="iphone-viewport" content="width=480, user-scalable=yes, maximum-scale=0.6667" />
@@ -25,7 +25,7 @@
     <a name="top"></a>
     <div id="header">
       <h1>課題攻略速報</h1>
-      <p class="moto"><i>------ Sample</i><font color="red"> from </font><i>テスト</i><p>
+      <p class="moto"><i>〜学生が創る「涙」と「<font color="red">情熱</font>」の物語〜</i><p>
     </div>
  	<td id="content">
           <!main window!>
