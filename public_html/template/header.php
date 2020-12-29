@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="ja" />
     <meta name="viewport" id="iphone-viewport" content="width=480, user-scalable=yes, maximum-scale=0.6667" />
-    <link rel = "stylesheet" type = "text/css" href = "../css/global.css">
+    <link rel = "stylesheet" type = "text/css" href = "../css/style.css">
     <script Langage="JavaScript">
       function client_resizeTo(520, 480) {
       　　if (document.layers) {
@@ -27,5 +27,4 @@
       <h1>課題攻略速報</h1>
       <p class="moto"><i>〜学生が創る「涙」と「<font color="red">情熱</font>」の物語〜</i><p>
     </div>
- 	<td id="content">
           <!main window!>

@@ -1,0 +1,139 @@
+body {
+  font-family: "Avenir Next";
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #000000;
+}
+
+
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: #808080;
+  color: #fff;
+  height: 80px;
+}
+
+.header-logo {
+  float: left;
+  padding: 8px;
+}
+
+.header-list li {
+  color: #fff;
+  float: left;
+  padding: 33px 20px;
+}
+
+.main {
+  padding: 80px 80px;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.title h1{
+  font-size: 100px;
+}
+
+
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  margin: 80px;
+  text-align:center;
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.task-list{
+    padding: 50px;
+}
+
+.lecture-list{
+    padding: 80px;
+}
+
+.lecture-list li{
+    float: left;
+    padding-left: 80px;
+}
+
+.neartask-list{
+    margin-top: 80px;
+    padding: 30px;
+}
+
+
+.contact-form {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* inputとtextareaのCSSを指定してください */
+textarea {
+    width: 60%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    margin-bottom: 40px;
+}
+
+input{
+    width: 60%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    margin-bottom: 40px;
+}
+
+.contact-submit {
+  width: 100px;
+  margin-bottom: 100px;
+  background-color: #dee7ec;
+  color: #889eab;
+}
+
+.footer {
+  background-color: #808080;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+  margin-top: 80px; 
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
