@@ -1,5 +1,5 @@
 <?php
-include("../template/header.php");  //echo the default Header entries
+    include("../template/header.php");  //echo the default Header entries
 ?>
 
 <!DOCTYPE html>
@@ -55,5 +55,5 @@ include("../template/header.php");  //echo the default Header entries
 </html>
 
 <?php
-include("../template/footer.php");  //echo the default Header entries
+    include("../template/footer.php");  //echo the default Header entries
 ?>
