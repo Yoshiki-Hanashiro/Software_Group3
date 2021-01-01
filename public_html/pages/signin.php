@@ -31,7 +31,7 @@ if (isset($_POST['signin'])) {
   ユーザ名<input type="text" name="username" value=""><br>
   パスワード<input type="password" name="password" value=""><br>
   <input type="submit" name="signin" value="新規登録">
-  <tr width="10"><td width="85"><input type="button" onclick="location.href='/../Software_Group3/public_html/index.php'" value="ログイン画面"></td><td></td></tr>
+  <tr width="10"><td width="85"><input type="button" onclick="location.href='../index.php'" value="ログイン画面"></td><td></td></tr>
 
   </form>
   

@@ -22,7 +22,8 @@
         echo $username;
         echo "で";
         echo $err_msg;
-        //header('Location: http://localhost/Software_Group3/home.php');
+        header('Location:/pages/main.php');
+        exit();
   //アカウント情報が間違っていたときの処理
       }else{
         $err_msg = "アカウント情報が間違っています。";
