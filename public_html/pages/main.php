@@ -30,7 +30,7 @@
             <a href = "question.php">
             <img src="../images/box.png" class="main">
             </a>
-            <p>質問箱</p>
+            <p>記事投稿</p>
         </div>
     </div>
     <div class="neartask-list">

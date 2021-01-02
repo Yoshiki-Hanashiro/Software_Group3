@@ -55,7 +55,7 @@
                 <img src="../images/box.png" class="menu">
             </li>
             <li>
-                <p><a href = "question.php">質問箱</a></p>
+                <p><a href = "question.php">記事投稿</a></p>
             </li>
         </ul>
         </div>
@@ -64,7 +64,7 @@
         <hr size="15" color="#808080">
         <th>
          <div class="header-logo">
-          <h1><font size="10">課題攻略速報</font><font size = "5"><i> 〜学生が創る「涙」と「<font color="red">情熱</font>」の物語〜</i></font></h1>
+          <h1><font size="10">課題攻略速報</font><font size = "5"></font></h1>
           </div>
         </div>
         </th>
