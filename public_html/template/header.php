@@ -55,7 +55,7 @@
                 <img src="../images/box.png" class="menu">
             </li>
             <li>
-                <p><a href = "question.php">記事投稿</a></p>
+                <p><a href = "post.php">記事投稿</a></p>
             </li>
         </ul>
         </div>

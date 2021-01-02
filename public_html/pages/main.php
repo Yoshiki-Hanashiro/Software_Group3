@@ -27,7 +27,7 @@
             <p>授業一覧</p>
         </div>
         <div class="contents-item">
-            <a href = "question.php">
+            <a href = "post.php">
             <img src="../images/box.png" class="main">
             </a>
             <p>記事投稿</p>

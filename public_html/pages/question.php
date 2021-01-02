@@ -3,7 +3,7 @@
 ?>
 
 <?php
-    include("../pages/post.php");  //echo the default Header entries
+    include("../pages/post.php");  //このように記述するとpost.phpの内容を引っ張ってきている事になり、それと全く同じになってしまいます。なのでしっかりとフォームを作成するように記述しましょう。
 ?>
 
 <?php
