@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 body {
-  font-family: "Avenir Next";
+  font-family: "Noto Serif JP", sans-serif;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -11,11 +14,18 @@ li {
   list-style: none;
 }
 
-.header {
+.header-logo {
+    font-family: "Noto Serif JP", sans-serif;
+    text-align:left;
+    margin-left: 50px;
+}
+
+.header{
   background-color: #808080;
-  color: #fff;
-  height: 80px;
-  padding:10px;
+  color: #ffff;
+  height: 120px;
+  padding: 50px;
+  margin-bottom: 100px; 
 }
 
 #nav-drawer {
@@ -69,6 +79,7 @@ li {
 
 /*中身*/
 #nav-content {
+  text-align: center;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -95,22 +106,17 @@ li {
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
-.header-logo {
-  float: left;
-  padding: 8px;
-}
-
-.header-list li {
-  color: #fff;
-  float: left;
-  padding: 33px 20px;
+image #nav-content{
+    width: 5px;
+    height: 5px;
 }
 
 .main {
-  padding: 80px 80px;
+  color: #000000;
 }
 
 .copy-container h1 {
+  text-align:center;
   font-size: 140px;
 }
 
@@ -118,29 +124,31 @@ li {
   font-size: 100px;
 }
 
-
-
 .contents {
   height: 500px;
-  margin-top: 100px;
 }
 
 .section-title {
   border-bottom: 2px solid #dee7ec;
   font-size: 28px;
-  padding-bottom: 15px;
+  padding: 15px 30px;
   margin-bottom: 50px;
 }
 
 .contents-item {
+  padding: 40px;
   float: left;
-  margin: 80px;
   text-align:center;
 }
 
 .contents-item p {
   font-size: 24px;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+image.main{
+    width: 40px;
+    height: 40px;
 }
 
 .task-list{
@@ -168,7 +176,7 @@ li {
 }
 
 /* inputとtextareaのCSSを指定してください */
-textarea {
+.contact-form textarea {
     width: 60%; /*親要素いっぱい広げる*/
     padding: 10px 15px; /*ボックスを大きくする*/
     font-size: 16px;
@@ -178,7 +186,7 @@ textarea {
     margin-bottom: 40px;
 }
 
-input{
+.contact-form input{
     width: 60%; /*親要素いっぱい広げる*/
     padding: 10px 15px; /*ボックスを大きくする*/
     font-size: 16px;
@@ -199,7 +207,7 @@ input{
   background-color: #808080;
   color: #fff;
   height: 120px;
-  padding: 40px;
+  padding: 60px;
   margin-top: 80px; 
 }
 
@@ -214,4 +222,20 @@ input{
 
 .footer-list li {
   padding-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1000px){
+    .contents-item {
+        margin-left: 80px;
+        padding: 40px;
+        float: left;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width: 999px){
+    body{
+        font-size: 20px;
+    }
 }
