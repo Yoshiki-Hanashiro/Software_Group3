@@ -23,8 +23,21 @@
   </head>
   <body onload="createImageLayer();">
     <a name="top"></a>
-    <div id="header">
-      <h1>課題攻略速報</h1>
-      <p class="moto"><i>〜学生が創る「涙」と「<font color="red">情熱</font>」の物語〜</i><p>
-    </div>
-          <!main window!>
+    <table>
+      <tr>
+        <th>
+          <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">ここに中身を入れる</div>
+        </th>
+        <th>
+          <div id="header">
+          <h1>課題攻略速報</h1>
+          <p class="moto"><i>〜学生が創る「涙」と「<font color="red">情熱</font>」の物語〜</i><p>
+          </div>
+        </th>
+      </tr>
+    </table>
+    

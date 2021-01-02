@@ -24,19 +24,19 @@
         </a>
     </div>
     <div class="contents-item">
-        <a href="lecture.php">
+        <a href="report.php">
         <img src="../images/lecture.png">
+        <p>記事一覧</p>
+        </a>
+    </div>
+    <div class="contents-item">
+        <a href="subject.php">
+        <img src="../images/homework.png">
         <p>授業一覧</p>
         </a>
     </div>
     <div class="contents-item">
-        <a href="homework.php">
-        <img src="../images/homework.png">
-        <p>課題一覧</p>
-        </a>
-    </div>
-    <div class="contents-item">
-        <a href = "box.php">
+        <a href = "question.php">
         <img src="../images/box.png">
         <p>質問箱</p>
         </a>
