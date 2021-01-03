@@ -64,7 +64,7 @@
         <hr size="15" color="#808080">
         <th>
          <div class="header-logo">
-          <h1><font size="10">課題攻略速報</font><font size = "5"></font></h1>
+          <h1><font size="10">課題攻略サイト</font><font size = "5"></font></h1>
           </div>
         </div>
         </th>
