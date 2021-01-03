@@ -52,12 +52,21 @@ if (isset($_POST['signin'])) {
     </div>
 
 <form action="" method="POST">
-  ユーザ名<input type="text" name="username" value=""><br>
-  パスワード<input type="password" name="password" value=""><br>
-  <input type="submit" name="signin" value="新規登録">
-  <tr width="10"><td width="85"><input type="button" onclick="location.href='../index.php'" value="ログイン画面"></td><td></td></tr>
-
-  </form>
+    <div class = "log-in">
+        <p>新規登録</p>
+        <div class="cp_iptxt">
+            <input type="text" name="username" value="" placeholder="user ID" class="login-input">
+        </div>
+        <div class="cp_iptxt">
+            <input type="password" name="password" value="" placeholder="password" class="login-input">
+        </div>
+        <input type="submit" name="signin" value="新規登録" class="button">
+    </div>
+    <div class = "log-in">
+        <p>ログイン画面へはこちらから</p>
+        <input type="button" onclick="location.href='../index.php'" value="ログイン画面" class="button">
+    </div>
+</form>
   
 <?php
     include("../template/footer.php");  //echo the default Header entries
