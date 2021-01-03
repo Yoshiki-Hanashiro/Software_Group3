@@ -4,7 +4,7 @@
 <div class="main">
     <div class="title">
         <center>
-        <h1>記事閲覧ページ</h1>
+        <h1>ARTICLE</h1>
         </center>
     </div>
 </div>

@@ -16,13 +16,13 @@
         </div>
         <div class="contents-item">
             <a href="report.php">
-            <img src="../images/lecture.png" class="main">
+            <img src="../images/homework.png" class="main">
             </a>
             <p>記事一覧</p>
         </div>
         <div class="contents-item">
             <a href="subject.php">
-            <img src="../images/homework.png" class="main">
+            <img src="../images/lecture.png" class="main">
             </a>
             <p>授業一覧</p>
         </div>

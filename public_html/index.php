@@ -67,22 +67,26 @@
 }
 ?>
 
-<table width=98%>
-  <tr width=100% height="360px">
-    <td width=50%>
-      <form name="form1" action="" method="post">
-        <table width="15">
-          <tr width="15"><td width="100">ユーザーID：</td><td><input type="text" name="username" size="15" ></td></tr>
-          <tr width="15"><td width="100">パスワード：</td><td><input type="text" name="password" size="15"></td></tr>
-          <tr width="10"><td width="85"><input type="submit" name = "login" value="ログイン"></td><td></td></tr>
-          <tr width="10"><td width="85"><input type="button" onclick="location.href='pages/signin.php'" value="新規登録"></td><td></td></tr>
-          <tr width="10"><td width="85"><input type="button" onclick="location.href='pages/post.php'" value="記事投稿ページ"></td><td></td></tr>
-          <tr width="10"><td width="85"><input type="button" onclick="location.href='pages/main.php'" value="メインページ"></td><td></td></tr>
-        </table>
-      </form>
-    </td>
-  </tr>
-</table>
+ <form name="form1" action="" method="post">
+ <div class = "log-in">
+    <p>ログインしてください</p>
+    <div class="cp_iptxt">
+        <input type="text" name="username" size="15" placeholder="user ID" class="login-input">
+    </div>
+    <div class="cp_iptxt">
+        <input type="text" name="password" size="15" placeholder="password" class="login-input">
+    </div>
+       <input type="submit" name = "login" value="ログイン" class="button">
+ </div>
+<div class = "log-in">
+     <p>登録がまだの方はこちらから</p>
+     <input type="button" onclick="location.href='pages/signin.php'" value="新規登録" class="button">
+</div>
+<div class = "log-in">
+       <input type="button" onclick="location.href='pages/post.php'" value="記事投稿ページ" class="button">
+       <input type="button" onclick="location.href='pages/main.php'" value="メインページ" class="button">
+</div>
+</form>
   
   <?php
     include("template/footer.php");
