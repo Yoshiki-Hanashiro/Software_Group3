@@ -25,47 +25,36 @@
   <body onload="createImageLayer();">
     <a name="top"></a>
     <div class="header">
-      <tr>
-        <th>
-          <div id="nav-drawer">
-          <input id="nav-input" type="checkbox" class="nav-unshown">
-          <label id="nav-open" for="nav-input"><span></span></label>
-          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-          <div id="nav-content">
-          <ul>
-            <li>
-                <img src="../images/mypage.png" class="menu">
-            </li>
-            <li>
-                <p> <a href = "mypage.php">マイページ</a></p>
-            </li>
-            <li>
-                <img src="../images/lecture.png" class="menu">
-            </li>
-            <li>
-                <p><a href="subject.php">授業一覧</a></p>
-            </li>
-            <li>
-                <img src="../images/homework.png" class="menu">
-            </li>
-            <li>
-                <p><a href="report.php">課題一覧</a></p>
-            </li>
-            <li>
-                <img src="../images/box.png" class="menu">
-            </li>
-            <li>
-                <p><a href = "post.php">記事投稿</a></p>
-            </li>
-        </ul>
-        </div>
-        </div>
-        </th>
-        <hr size="15" color="#808080">
-        <th>
-         <div class="header-logo">
+     <div class="element">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <table cellspacing="20">
+            <tr>
+                <td><img src="../images/mypage.png" class="menu" height="80" width="80"></td>
+                 <td><a href = "mypage.php">マイページ</a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/homework.png" class="menu" height="80" width="80"></td>
+                <td><a href="report.php">記事一覧</a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/lecture.png" class="menu" height="80" width="80"></td>
+                <td><a href="subject.php">授業一覧</a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/box.png" class="menu" height="80" width="80"></td>
+                <td><a href = "post.php">記事投稿</a></td>
+            </tr>
+        </table>
+       </div>
+     </div>
+     </div>
+     <div class="element">
+        <div class="header-logo">
           <h1><font size="10">課題攻略サイト</font><font size = "5"></font></h1>
-          </div>
         </div>
-        </th>
-      </tr>
+     </div>
+　</div>
