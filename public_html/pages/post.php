@@ -3,7 +3,7 @@
 ?>
 <div class="contact-form">
         <h2 class="section-title">投稿フォーム</h2>
-        <input name="name" placeholder="名前">
+        <input name="name" placeholder="タイトル">
         </p>
         <textarea name="text" rows="10" placeholder="本文"></textarea>
         </p>
