@@ -82,10 +82,6 @@
      <p>登録がまだの方はこちらから</p>
      <input type="button" onclick="location.href='pages/signin.php'" value="新規登録" class="button">
 </div>
-<div class = "log-in">
-       <input type="button" onclick="location.href='pages/post.php'" value="記事投稿ページ" class="button">
-       <input type="button" onclick="location.href='pages/main.php'" value="メインページ" class="button">
-</div>
 </form>
   
   <?php
