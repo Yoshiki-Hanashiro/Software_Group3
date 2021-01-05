@@ -2,9 +2,14 @@
     include("../template/header.php");  //echo the default Header entries
 ?>
 
-<?php
-    include("../pages/post.php");  //このように記述するとpost.phpの内容を引っ張ってきている事になり、それと全く同じになってしまいます。なのでしっかりとフォームを作成するように記述しましょう。
-?>
+<div class="contact-form">
+        <h2 class="section-title">投稿フォーム</h2>
+        <input name="name" placeholder="タイトル">
+        </p>
+        <textarea name="text" rows="10" placeholder="本文"></textarea>
+        </p>
+        <input class="contact-submit" type="submit" value="送信" name="btn">
+</div>
 
 <?php
     include("../template/footer.php");  //echo the default Header entries

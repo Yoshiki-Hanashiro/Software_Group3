@@ -1,4 +1,4 @@
-        <div class="footer">
+<div class="footer">
     <div class="footer-logo">課題攻略サイト</div>
     <div class="footer-list">
         <ul>

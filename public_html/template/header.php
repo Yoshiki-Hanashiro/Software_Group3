@@ -34,27 +34,27 @@
           <table cellspacing="20">
             <tr>
                 <td><img src="../images/mypage.png" class="menu" height="80" width="80"></td>
-                 <td><a href = "mypage.php">マイページ</a></td>
+                 <td><a href = "../pages/mypage.php">マイページ</a></td>
             </tr>
             <tr>
                 <td><img src="../images/homework.png" class="menu" height="80" width="80"></td>
-                <td><a href="report.php">記事一覧</a></td>
+                <td><a href="../pages/report.php">記事一覧</a></td>
             </tr>
             <tr>
                 <td><img src="../images/lecture.png" class="menu" height="80" width="80"></td>
-                <td><a href="subject.php">授業一覧</a></td>
+                <td><a href="../pages/subject.php">授業一覧</a></td>
             </tr>
             <tr>
                 <td><img src="../images/box.png" class="menu" height="80" width="80"></td>
-                <td><a href = "post.php">記事投稿</a></td>
+                <td><a href = "../pages/post.php">記事投稿</a></td>
             </tr>
         </table>
        </div>
      </div>
      </div>
-     <div class="element">
-        <div class="header-logo">
+  <div class = "element">
+    <div class="header-logo">
           <h1><font size="10">課題攻略サイト</font><font size = "5"></font></h1>
-        </div>
-     </div>
-　</div>
+   </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 <?php
     include("../template/header.php");  //echo the default Header entries
 ?>
+
 <div class="main">
     <div class="title">
         <center>
