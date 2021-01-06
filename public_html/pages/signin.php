@@ -2,20 +2,20 @@
 clearstatcache();
 if (isset($_POST['signin'])) {
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $dsn = 'mysql:host=localhost;dbname=sample;';
-try {
-    $db = new PDO($dsn, 'coral', 'ukU3urEb');
-    $sql = 'insert into users(username, password) values(?, ?)';
-    $stmt = $db->prepare($sql);
-    $stmt->execute(array($username, $password));
-    $stmt = null;
-    $db = null;
-} catch (PDOExeption $e) {
-      //echo $e->getMessage();
-    exit;
-}
+    try {
+        $db = new PDO($dsn, 'coral', 'ukU3urEb');
+        $sql = 'insert into users(username, password) values(?, ?)';
+        $stmt = $db->prepare($sql);
+        $stmt->execute(array($username, $password));
+        $stmt = null;
+        $db = null;
+    } catch (PDOExeption $e) {
+        //echo $e->getMessage();
+        exit;
+    }
 }
 ?>
 

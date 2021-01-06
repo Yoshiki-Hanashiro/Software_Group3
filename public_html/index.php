@@ -39,15 +39,13 @@
     $password = $_POST['password'];
   //データが渡ってきた場合の処理
     try {
-      $db = new PDO('mysql:host=localhost; dbname=sample','coral','ukU3urEb');
-      $sql = 'select count(*) from users where username=? and password=?';
+      $db = new PDO('mysql:host=localhost; dbname=sample; charset=utf8','coral','ukU3urEb');
+      $sql = 'select * from users where username=?';
       $stmt = $db->prepare($sql);
-      $stmt->execute(array($username,$password));
-      $result = $stmt->fetch();
-      $stmt = null;
-      $db = null;
+      $stmt->execute(array($password));
+      $result = $stmt->fetch(PDO::FETCH_ASSOC);
   //ログイン認証ができたときの処理
-      if ($result[0] != 0){
+      if (password_verify($password, $result['password'])){
         $err_msg = "ログインしました"; //ログイン成功時ページ移動できるが今は保留
         echo $username;
         echo "で";
@@ -67,8 +65,8 @@
 }
 ?>
 
- <form name="form1" action="" method="post">
- <div class = "log-in">
+<form name="form1" action="" method="post">
+<div class = "log-in">
     <p>ログインしてください</p>
     <div class="cp_iptxt">
         <input type="text" name="username" size="15" placeholder="user ID" class="login-input">
@@ -76,11 +74,11 @@
     <div class="cp_iptxt">
         <input type="text" name="password" size="15" placeholder="password" class="login-input">
     </div>
-       <input type="submit" name = "login" value="ログイン" class="button">
- </div>
+      <input type="submit" name = "login" value="ログイン" class="button">
+</div>
 <div class = "log-in">
-     <p>登録がまだの方はこちらから</p>
-     <input type="button" onclick="location.href='pages/signin.php'" value="新規登録" class="button">
+    <p>登録がまだの方はこちらから</p>
+    <input type="button" onclick="location.href='pages/signin.php'" value="新規登録" class="button">
 </div>
 </form>
   
