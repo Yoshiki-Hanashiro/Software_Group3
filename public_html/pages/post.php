@@ -3,9 +3,10 @@
 ?>
 <div class="contact-form">
         <h2 class="section-title">投稿フォーム</h2>
-        <input name="name" placeholder="タイトル">
+        <form action="confirm.php" method="post" > 
+        <input name="userid" placeholder="ユーザーID">
         </p>
-        <textarea name="text" rows="10" placeholder="本文"></textarea>
+        <textarea name="article" rows="10" placeholder="本文"></textarea>
         </p>
         <input class="contact-submit" type="submit" value="送信" name="btn">
 </div>
