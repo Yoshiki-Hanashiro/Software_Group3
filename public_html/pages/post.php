@@ -3,7 +3,7 @@
 ?>
 <div class="contact-form">
         <h2 class="section-title">投稿フォーム</h2>
-        <form action="confirm.php" method="post" > 
+        <form action="confirm.php" method="post"> 
         <input name="userid" placeholder="ユーザーID">
         </p>
         <textarea name="article" rows="10" placeholder="本文"></textarea>

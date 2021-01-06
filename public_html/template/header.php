@@ -25,7 +25,7 @@
   <body onload="createImageLayer();">
     <a name="top"></a>
     <div class="header">
-     <div class="element">
+    <div class="element">
       <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
         <label id="nav-open" for="nav-input"><span></span></label>
@@ -34,7 +34,7 @@
           <table cellspacing="20">
             <tr>
                 <td><img src="../images/mypage.png" class="menu" height="80" width="80"></td>
-                 <td><a href = "../pages/mypage.php">マイページ</a></td>
+                <td><a href = "../pages/mypage.php">マイページ</a></td>
             </tr>
             <tr>
                 <td><img src="../images/homework.png" class="menu" height="80" width="80"></td>
@@ -49,12 +49,12 @@
                 <td><a href = "../pages/post.php">記事投稿</a></td>
             </tr>
         </table>
-       </div>
-     </div>
-     </div>
+      </div>
+    </div>
+    </div>
   <div class = "element">
     <div class="header-logo">
           <h1><font size="10">課題攻略サイト</font><font size = "5"></font></h1>
-   </div>
+  </div>
   </div>
 </div>

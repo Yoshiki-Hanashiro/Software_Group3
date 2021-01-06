@@ -2,51 +2,51 @@
     include("../template/header.php");  //echo the default Header entries
 ?>
 <div class="main">
-      <div class="title">
+    <div class="title">
         <center>
-        	<h1>LECTURE</h1>
+            <h1>LECTURE</h1>
         </center>
-      </div>
-      <div class="lecture-list">
-      <h2 class="section-title">月曜日</h2>
-      	<ul>
-      		<li><a href = "ai.php">人工知能</a></li>
-      		<li>2つめの項目</li>
-      		<li>3つめの項目</li>
-      	</ul>
-      </div>
-      <div class="lecture-list">
-      <h2 class="section-title">火曜日</h2>
-      	<ul>
-      		<li>1つめの項目</li>
-      		<li>2つめの項目</li>
-      		<li>3つめの項目</li>
-      	</ul>
-      </div>
-      <div class="lecture-list">
-      <h2 class="section-title">水曜日</h2>
-      	<ul>
-      		<li>1つめの項目</li>
-      		<li>2つめの項目</li>
-      		<li>3つめの項目</li>
-      	</ul>
-      </div>
-      <div class="lecture-list">
-      <h2 class="section-title">木曜日</h2>
-      	<ul>
-      		<li>1つめの項目</li>
-      		<li>2つめの項目</li>
-      		<li>3つめの項目</li>
-      	</ul>
-      </div>
-      <div class="lecture-list">
-      <h2 class="section-title">金曜日</h2>
-      	<ul>
-      		<li>1つめの項目</li>
-      		<li>2つめの項目</li>
-      		<li>3つめの項目</li>
-      	</ul>
-      </div>
+    </div>
+    <div class="lecture-list">
+    <h2 class="section-title">月曜日</h2>
+		<ul>
+			<li><a href = "ai.php">人工知能</a></li>
+			<li>2つめの項目</li>
+			<li>3つめの項目</li>
+		</ul>
+    </div>
+    <div class="lecture-list">
+    <h2 class="section-title">火曜日</h2>
+		<ul>
+			<li>1つめの項目</li>
+			<li>2つめの項目</li>
+			<li>3つめの項目</li>
+		</ul>
+    </div>
+    <div class="lecture-list">
+    <h2 class="section-title">水曜日</h2>
+		<ul>
+			<li>1つめの項目</li>
+			<li>2つめの項目</li>
+			<li>3つめの項目</li>
+		</ul>
+    </div>
+    <div class="lecture-list">
+    <h2 class="section-title">木曜日</h2>
+		<ul>
+			<li>1つめの項目</li>
+			<li>2つめの項目</li>
+			<li>3つめの項目</li>
+		</ul>
+    </div>
+    <div class="lecture-list">
+    <h2 class="section-title">金曜日</h2>
+		<ul>
+			<li>1つめの項目</li>
+			<li>2つめの項目</li>
+			<li>3つめの項目</li>
+			</ul>
+    </div>
 </div>
 
 <?php
