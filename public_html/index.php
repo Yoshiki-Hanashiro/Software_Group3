@@ -40,10 +40,11 @@
   //データが渡ってきた場合の処理
     try {
       $db = new PDO('mysql:host=localhost; dbname=sample; charset=utf8','coral','ukU3urEb');
-      $sql = 'select * from users where username=?';
+      $sql = 'select password from users where username= :user;';
       $stmt = $db->prepare($sql);
-      $stmt->execute(array($password));
-      $result = $stmt->fetch(PDO::FETCH_ASSOC);
+      $stmt->bindParam(':user',$username);
+      $stmt->execute();
+      $result = $stmt->fetch();
   //ログイン認証ができたときの処理
       if (password_verify($password, $result['password'])){
         $err_msg = "ログインしました"; //ログイン成功時ページ移動できるが今は保留
