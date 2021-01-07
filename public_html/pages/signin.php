@@ -58,7 +58,7 @@ if (isset($_POST['signin'])) {
             <input type="text" name="username" value="" placeholder="user ID" class="login-input">
         </div>
         <div class="cp_iptxt">
-            <input type="password" name="password" value="" placeholder="password" class="login-input">
+            <input type="text" name="password" value="" placeholder="password" class="login-input">
         </div>
         <input type="submit" name="signin" value="新規登録" class="button">
     </div>

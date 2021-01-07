@@ -73,7 +73,7 @@
         <input type="text" name="username" size="15" placeholder="user ID" class="login-input">
     </div>
     <div class="cp_iptxt">
-        <input type="text" name="password" size="15" placeholder="password" class="login-input">
+        <input type="password" name="password" size="15" placeholder="password" class="login-input">
     </div>
       <input type="submit" name = "login" value="ログイン" class="button">
 </div>
