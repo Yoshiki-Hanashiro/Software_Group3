@@ -4,9 +4,9 @@ if (isset($_POST['signin'])) {
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    $dsn = 'mysql:host=localhost;dbname=sample;';
+    $dsn = 'mysql:host=localhost;dbname=software;';
     try {
-        $db = new PDO($dsn, 'coral', 'ukU3urEb');
+        $db = new PDO($dsn, 'coral', 'coral');
         $sql = 'insert into users(username, password) values(?, ?)';
         $stmt = $db->prepare($sql);
         $stmt->execute(array($username, $password));

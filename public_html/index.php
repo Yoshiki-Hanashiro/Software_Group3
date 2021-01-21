@@ -39,7 +39,7 @@
     $password = $_POST['password'];
   //データが渡ってきた場合の処理
     try {
-      $db = new PDO('mysql:host=localhost; dbname=sample; charset=utf8','coral','ukU3urEb');
+      $db = new PDO('mysql:host=localhost; dbname=software; charset=utf8','coral','coral');
       $sql = 'select password from users where username= :user;';
       $stmt = $db->prepare($sql);
       $stmt->bindParam(':user',$username);
@@ -51,7 +51,7 @@
         echo $username;
         echo "で";
         echo $err_msg;
-        header('Location:/pages/main.php');
+        header('Location:pages/main.php');
         exit();
   //アカウント情報が間違っていたときの処理
       }else{
