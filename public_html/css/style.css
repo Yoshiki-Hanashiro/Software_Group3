@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+body {
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #000000;
+}
+
+
+li {
+  list-style: none;
+}
+
+.log-in input{
+    width: 25%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    margin-bottom: 30px;
+}
+
+.login-input:focus {
+    border: 2px solid #808080; 
+    z-index: 10;
+    outline: 0;
+}
+
+.button {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 23px;   /* 余白       */
+  background    : #595959;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #595959;    /* 枠の指定 */
+}
+
+.button:hover {
+  color         : #595959;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.log-in{
+    text-align: center;
+    padding: 30px;
+}
+
+.element{
+    display: inline-block;
+}
+
+.header-logo {
+    text-align:left;
+    margin-left: 50px;
+}
+
+.header{
+  background-color: #808080;
+  color: #ffff;
+  height: 120px;
+  padding: 50px;
+  margin-bottom: 100px; 
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 4px;/*線の太さ*/
+  width: 30px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  text-align: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 300px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+#nav-content table{
+    padding: 30px;
+}
+
+.main {
+  color: #000000;
+}
+
+.copy-container h1 {
+  text-align:center;
+  font-size: 80px;
+}
+
+.title h1{
+  font-size: 70px;
+}
+
+.contents {
+  width: 80%;
+  margin: auto;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding: 15px 30px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  padding: 40px;
+  float: left;
+  text-align:center;
+  margin: auto;
+}
+
+.contents-item p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+img.main{
+    width: 100px;
+    height: 100px;
+}
+
+.task-list{
+    padding: 50px;
+}
+
+.lecture-list{
+    padding: 80px;
+}
+
+.lecture-list li{
+    float: left;
+    padding-left: 80px;
+}
+
+.neartask-list{
+    margin-top: 500px;
+    padding: 50px;
+}
+
+
+.contact-form {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* inputとtextareaのCSSを指定してください */
+.contact-form textarea {
+    width: 60%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    margin-bottom: 40px;
+}
+
+.contact-form input{
+    width: 60%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    margin-bottom: 40px;
+}
+
+.contact-submit {
+  width: 100px;
+  margin-bottom: 100px;
+  background-color: #dee7ec;
+  color: #889eab;
+}
+
+.footer {
+  background-color: #808080;
+  color: #fff;
+  height: 120px;
+  padding: 60px;
+  margin-top: 80px; 
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1000px){
+    .contents-item {
+        margin-left: 80px;
+        padding: 40px;
+        float: left;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width: 999px){
+    body{
+        font-size: 15px;
+    }
+    
+    .footer{
+        font-size: 15px;
+    }
+    
+    h1{
+        font-size: 5px;
+    }
+}
