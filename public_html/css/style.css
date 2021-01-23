@@ -9,7 +9,6 @@ a:link, a:visited, a:hover, a:active {
   color: #000000;
 }
 
-
 li {
   list-style: none;
 }
@@ -43,7 +42,7 @@ li {
   border        : 2px solid #595959;    /* 枠の指定 */
 }
 
-.button:hover {
+.button:hover{
   color         : #595959;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
@@ -67,90 +66,207 @@ li {
   color: #ffff;
   height: 120px;
   padding: 50px;
-  margin-bottom: 100px; 
 }
 
-#nav-drawer {
-  position: relative;
+.drawer_menu a {
+	color: inherit;
+	text-decoration: none;
 }
 
-/*チェックボックス等は非表示に*/
-.nav-unshown {
-  display:none;
+.drawer_menu a:visited {
+	color: inherit;
 }
 
-/*アイコンのスペース*/
-#nav-open {
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  vertical-align: bottom;
+/*+++ Default Button Color +++*/
+
+.drawer_menu .drawer_button {
+	color: #fff;
+	/* ハンバーガーメニュー文字色 */
+	display: none;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
-#nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 4px;/*線の太さ*/
-  width: 30px;/*長さ*/
-  border-radius: 3px;
-  background: #555;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-#nav-open span:before {
-  bottom: -8px;
-}
-#nav-open span:after {
-  bottom: -16px;
+.drawer_menu .drawer_button .drawer_bar {
+	background-color: #fff;
+	/* ハンバーガーメニュー三本線の色 */
 }
 
-/*閉じる用の薄黒カバー*/
-#nav-close {
-  display: none;/*はじめは隠しておく*/
-  position: fixed;
-  z-index: 99;
-  top: 0;/*全体に広がるように*/
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0;
-  transition: .3s ease-in-out;
+.drawer_menu .drawer_bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(51, 51, 51, 0.5);
+	display: none;
+	top: 0;
+	left: 0;
 }
 
-/*中身*/
-#nav-content {
-  text-align: center;
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;/*最前面に*/
-  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 300px;/*最大幅（調整してください）*/
-  height: 100%;
-  background: #fff;/*背景色*/
-  transition: .3s ease-in-out;/*滑らかに表示*/
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);/*左に隠しておく*/
+.drawer_menu .drawer_button {
+	display: block;
+	background-color: #555;
+	color: #fff;
+	border: none;
+	padding: 5px;
+	width: 50px;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1001;
+	text-align: center;
+	outline: none;
 }
 
-/*チェックが入ったらもろもろ表示*/
-#nav-input:checked ~ #nav-close {
-  display: block;/*カバーを表示*/
-  opacity: .5;
+.drawer_menu .drawer_button.active .drawer_bar {
+	width: 40px;
 }
 
-#nav-input:checked ~ #nav-content {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);/*中身を表示（右へスライド）*/
-  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+.drawer_menu .drawer_button.active .drawer_bar1 {
+	transform: rotate(30deg);
 }
 
-#nav-content table{
-    padding: 30px;
+.drawer_menu .drawer_button.active .drawer_bar2 {
+	opacity: 0;
 }
+
+.drawer_menu .drawer_button.active .drawer_bar3 {
+	transform: rotate(-30deg);
+}
+
+.drawer_menu .drawer_button.active .drawer_menu_text {
+	display: none;
+}
+
+.drawer_menu .drawer_button.active .drawer_close {
+	display: block;
+}
+
+.drawer_menu .drawer_bar {
+	display: block;
+	height: 2px;
+	margin: 8px 2px;
+	transition: all 0.2s;
+	transform-origin: 0 0;
+}
+
+.drawer_menu .drawer_text {
+	text-align: center;
+	font-size: 10px;
+}
+
+.drawer_menu .drawer_close {
+	letter-spacing: 0.08em;
+	display: none;
+}
+
+.drawer_menu .drawer_menu_text {
+	display: block;
+}
+
+.drawer_menu .drawer_nav_wrapper {
+	width: 250px;
+	height: 100%;
+	transition: all 0.2s;
+	transform: translate(250px);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #ffff;
+	/* ドロワーメニュー内背景色 */
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.drawer_menu .drawer_nav {
+	display: block;
+	position: relative;
+	margin-top: 40px;
+}
+
+.drawer_menu .drawer_nav li {
+	background-color: #fff;
+	height: auto;
+	line-height: 50px;
+	/*  ドロワーメニューリスト項目高さ */
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+
+.drawer_menu .drawer_nav li a {
+	background-color: #fff;
+	/* ドロワーメニューリスト背景色 */
+	color: #555;
+	/* ドロワーメニューリスト文字色 */
+	display: block;
+	text-align: left;
+	padding-left: 20px;
+}
+
+/* 2階層目 */
+/*
+.drawer_menu .drawer_nav  ul.second-level {
+	display: block;
+}
+*/
+
+.drawer_menu .drawer_nav li ul.second-level {
+	display: none;
+	position: relative;
+	padding: 0;
+	z-index: 1001;
+}
+
+.drawer_menu .drawer_nav li ul.second-level li a {
+	padding-left: 40px;
+}
+
+.drawer_menu .drawer_nav_wrapper.open {
+	transform: translate(0);
+}
+
+.drawer_menu.left .drawer_button {
+	right: auto;
+	left: 32px;
+}
+
+.drawer_menu.left .drawer_nav_wrapper {
+	transform: translate(-250px);
+	right: auto;
+	left: 0;
+}
+
+.drawer_menu.left .drawer_nav_wrapper.open {
+	transform: translate(0);
+}
+
+.touch-btn {
+	color: #555;
+	position: absolute;
+	top: .25rem;
+	right: 2%;
+	display: block;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+
+/*  ウィジェットタイトル */
+.drawer-title {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #555;
+	/* ドロワーメニュー内タイトルライン背景色 */
+	color: #808080;
+}
+
 
 .main {
   color: #000000;
@@ -240,27 +356,39 @@ img.main{
 }
 
 .contact-submit {
-  width: 100px;
-  margin-bottom: 100px;
-  background-color: #dee7ec;
-  color: #889eab;
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 23px;   /* 余白       */
+  background    : #595959;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #595959;    /* 枠の指定 */
+}
+
+.contact-submit:hover{
+  color         : #595959;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
 
 .footer {
   background-color: #808080;
   color: #fff;
-  height: 120px;
-  padding: 60px;
-  margin-top: 80px; 
+  height: 100px;
+  padding: 50px;
+  margin-top: 100px; 
 }
 
 .footer-logo {
   float: left;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .footer-list {
   float: right;
+  font-size: 15px;
 }
 
 .footer-list li {
@@ -268,7 +396,8 @@ img.main{
 }
 
 
-@media screen and (min-width: 1000px){
+/* 1000px以上 */
+@media screen and (min-width: 1001px){
     .contents-item {
         margin-left: 80px;
         padding: 40px;
@@ -277,16 +406,6 @@ img.main{
     }
 }
 
-@media screen and (max-width: 999px){
-    body{
-        font-size: 15px;
-    }
-    
-    .footer{
-        font-size: 15px;
-    }
-    
-    h1{
-        font-size: 5px;
-    }
+/* 1000px以下 */
+@media screen and (max-width: 1000px){
 }
