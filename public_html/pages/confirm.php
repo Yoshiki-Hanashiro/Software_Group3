@@ -3,19 +3,20 @@
 ?>
 <?php
 // セッションの開始
-//user:root,password:root
-//create table test(num int auto_increment primary key, article text, userid varchar(10));
 session_start();
 
-$userid = htmlspecialchars($_POST['userid'], ENT_QUOTES, 'UTF-8');
-$article = htmlspecialchars($_POST['article'], ENT_QUOTES, 'UTF-8');
+$title = htmlspecialchars($_POST['title'], ENT_QUOTES, 'UTF-8');
+$author = htmlspecialchars($_POST['author'], ENT_QUOTES, 'UTF-8');
+$text = htmlspecialchars($_POST['text'], ENT_QUOTES, 'UTF-8');
 
 // 入力値をセッション変数に格納
-$_SESSION['userid'] = $userid;
-$_SESSION['article'] = $article;
+$_SESSION['title'] = $title;
+$_SESSION['author'] = $author;
+$_SESSION['text'] = $text;
 ?>
 <!DOCTYPE HTML>
 <html lang="ja">
+  
 <head>
 <meta charset="utf-8">
 <title>ユーザー登録フォーム(confirm)</title>
@@ -38,8 +39,9 @@ input#send {
 <h1>記事内容確認</h1>
 <form action="submit.php" method="post">
 <table>
-<tr><th>ユーザーID：</th><td><?php echo $userid; ?></td></tr>
-<tr><th>記事</th><td><?php echo $article; ?></td></tr>
+<tr><th>著者</th><td><?php echo $author; ?></td></tr>
+<tr><th>タイトル</th><td><?php echo $title; ?></td></tr>
+<tr><th>記事内容</th><td><?php echo $text; ?></td></tr>
 </table>
 <input id="send" type="submit" value="登録">
 </form>
