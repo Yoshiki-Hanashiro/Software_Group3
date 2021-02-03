@@ -50,7 +50,8 @@
  <meta charset="utf-8">
  </head>
  <body>
- <h1>記事一覧</h1> 
+ <div class="report">
+<h1>記事一覧</h1>
   
   
  <table border='1'>
@@ -70,7 +71,7 @@
  ?>
   
  </table>
-  
+  </div>
  </body>
  </html>
 <?php

@@ -325,9 +325,12 @@ img.main{
 
 .neartask-list{
     margin-top: 500px;
-    padding: 50px;
+    padding: 100px;
 }
 
+.neartask-list li{
+    margin-bottom: 10px;
+}
 
 .contact-form {
   padding-top: 100px;
@@ -371,6 +374,15 @@ img.main{
 .contact-submit:hover{
   color         : #595959;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
+}
+
+.report{
+    text-align: center;
+}
+
+.report table{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
