@@ -6,7 +6,7 @@ if (isset($_POST['signin'])) {
 
     $dsn = 'mysql:host=localhost;dbname=software;';
     try {
-        $db = new PDO($dsn, 'root', '1029Kaito');
+        $db = new PDO($dsn, 'coral', 'coral');
         $sql = 'insert into users(username, password) values(?, ?)';
         $stmt = $db->prepare($sql);
         $stmt->execute(array($username, $password));

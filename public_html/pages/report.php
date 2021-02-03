@@ -2,46 +2,45 @@
     include("../template/header.php");  //echo the default Header entries
 ?>
 <?php
+
+ // データベースに接続
+ $dsn = 'mysql:host=localhost;dbname=software;';
+ $user = 'coral'; 
+ $pass = 'coral'; 
  
- //データベース接続
- $server = "";  
- $userName = ""; 
- $password = ""; 
- $dbName = "";
-  
- $mysqli = new mysqli($server, $userName, $password,$dbName);
-  
- if ($mysqli->connect_error){
-     echo $mysqli->connect_error;
-     exit();
- }else{
-     $mysqli->set_charset("utf-8");
+ try{    
+    $pdo = new PDO($dsn,$user,$pass);
+ } catch (PDOException $e) {
+    exit('データベースに接続できませんでした。' . $e->getMessage());
  }
-  
- $sql = "SELECT * FROM coments";
-  
- $result = $mysqli -> query($sql);
-  
+ 
+ 
+ $sql = "SELECT * FROM contents";
+
+ $result = $pdo -> query($sql);
+ 
  //クエリー失敗
  if(!$result) {
-     echo $mysqli->error;
+     echo "query miss";
+     echo $pdo->error;
      exit();
  }
   
  //レコード件数
- $row_count = $result->num_rows;
-  
+ $row_count = $result->rowCount();
+
+
  //連想配列で取得
- while($row = $result->fetch_array(MYSQLI_ASSOC)){
+ while($row = $result->fetch(PDO::FETCH_ASSOC)){
      $rows[] = $row;
  }
-  
+
  //結果セットを解放
- $result->free();
-  
+ $result->null;
+ 
  // データベース切断
- $mysqli->close();
-  
+ $pdo->NUll;
+ 
  ?>
   
  <!DOCTYPE html>

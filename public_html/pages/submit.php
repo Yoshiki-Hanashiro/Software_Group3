@@ -9,15 +9,15 @@ $title = htmlspecialchars($_SESSION['title'], ENT_QUOTES, 'UTF-8');
 $text = htmlspecialchars($_SESSION['text'], ENT_QUOTES, 'UTF-8');
 
 // 接続設定
-$user = 'root';
-$pass = '1029Kaito';
+$user = 'coral';
+$pass = 'coral';
 
 // データベースに接続
-$dsn = 'mysql:host=;dbname=;charset=utf8';
+$dsn = 'mysql:host=localhost;dbname=software;';
 $conn = new PDO($dsn, $user, $pass); //「$conn」は、任意のオブジェクト名
 
 // データの追加
-$sql = 'INSERT INTO coments(text, author, title) VALUES("'.$text.'","'.$author.'","'.$title.'")';
+$sql = 'INSERT INTO contents(text, author, title) VALUES("'.$text.'","'.$author.'","'.$title.'")';
 $stmt = $conn -> prepare($sql);
 $stmt -> execute();
 ?>

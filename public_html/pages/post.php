@@ -20,9 +20,9 @@
 session_start();
 try {
     //DB名、ユーザー名、パスワード
-    $dsn = 'mysql:dbname=;host=';
-    $user = '';
-    $password = '';
+    $dsn = 'mysql:host=localhost;dbname=software;';
+    $user = 'coral';
+    $password = 'coral';
 
     $PDO = new PDO($dsn, $user, $password); //MySQLのデータベースに接続
     $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //PDOのエラーレポートを表示
@@ -32,7 +32,7 @@ try {
     $title = $_POST['title'];
 
     // データの追加
-    $sql = "INSERT INTO coments (text, author, title) VALUES(:text, :author, :title)";
+    $sql = "INSERT INTO contents(text, author, title) VALUES(:text, :author, :title)";
     $stmt = $dbh->prepare($sql);
     $params = array(':text' => $text, ':author' => $author, ':title' => $title); // 挿入する値を配列に格納する
     $stmt->execute($params); //挿入する値が入った変数をexecuteにセットしてSQLを実行
